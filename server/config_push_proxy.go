@@ -13,6 +13,7 @@ import (
 
 type ConfigPushProxy struct {
 	AndroidPushSettings     []AndroidPushSettings
+	CustomPushSettings      []CustomPushSettings
 	ListenAddress           string
 	ThrottleVaryByHeader    string
 	LogFileLocation         string
@@ -42,6 +43,16 @@ type AndroidPushSettings struct {
 	Type                string
 	AndroidAPIKey       string `json:"AndroidApiKey"`
 	ServiceFileLocation string `json:"ServiceFileLocation"`
+}
+
+type CustomPushSettings struct {
+	Type        string
+	Endpoint    string
+	SysID       string `json:"SysId"`
+	MessageType string
+	IsSubApp    string
+	IsToWeb     string
+	Title       string
 }
 
 // FindConfigFile searches for the filepath in a list of directories

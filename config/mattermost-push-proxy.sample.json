@@ -38,6 +38,35 @@
             "ServiceFileLocation":""
         }
     ],
+    "CustomPushSettings": [
+        {
+            "Type":"android",
+            "Endpoint":"http://158.220.202.248:8090/zjrcu-upad-consumer/api/message/sendMessage",
+            "SysId":"robotclaw",
+            "MessageType":"2",
+            "IsSubApp":"0",
+            "IsToWeb":"0",
+            "Title":"mars"
+        },
+        {
+            "Type":"apple",
+            "Endpoint":"http://158.220.202.248:8090/zjrcu-upad-consumer/api/message/sendMessage",
+            "SysId":"robotclaw",
+            "MessageType":"2",
+            "IsSubApp":"0",
+            "IsToWeb":"0",
+            "Title":"mars"
+        },
+        {
+            "Type":"harmony",
+            "Endpoint":"http://158.220.202.248:8090/zjrcu-upad-consumer/api/message/sendMessage",
+            "SysId":"robotclaw",
+            "MessageType":"2",
+            "IsSubApp":"0",
+            "IsToWeb":"0",
+            "Title":"mars"
+        }
+    ],
     "EnableConsoleLog": true,
     "EnableFileLog": false,
     "LogFileLocation": "",
