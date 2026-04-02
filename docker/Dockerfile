@@ -24,7 +24,7 @@ RUN apt-get update \
 # Coyping needed files from previous stage
 COPY --from=builder /mattermost-push-proxy/ /mattermost-push-proxy/
 COPY docker/entrypoint /usr/local/bin/
-
+RUN chmod 755 /usr/local/bin/entrypoint
 RUN chown -R nobody:nogroup /mattermost-push-proxy
 
 USER nobody
